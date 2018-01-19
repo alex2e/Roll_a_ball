@@ -1,4 +1,10 @@
-﻿using UnityEngine;
+﻿///////////////////////////////////////
+// Práctica: Roll-a-ball
+// Alumno/a: Alejandro Snatillana Ruiz
+// Curso: 2017/2018
+// Fichero: Rotator.cs
+///////////////////////////////////////
+using UnityEngine;
 using System.Collections;
 
 public class Rotator : MonoBehaviour

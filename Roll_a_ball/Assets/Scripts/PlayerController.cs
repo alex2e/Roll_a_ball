@@ -1,4 +1,10 @@
-﻿using UnityEngine;
+﻿///////////////////////////////////////
+// Práctica: Roll-a-ball
+// Alumno/a: Alejandro Snatillana Ruiz
+// Curso: 2017/2018
+// Fichero: PlayerController.cs
+///////////////////////////////////////
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
@@ -32,7 +38,7 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Pick Up"))
+        if (other.gameObject.CompareTag("PickUp"))
         {
             other.gameObject.SetActive(false);
             count = count + 1;
@@ -43,7 +49,7 @@ public class PlayerController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        if (count >= 12)
+        if (count >= 8)
         {
             winText.text = "You Win!";
         }
